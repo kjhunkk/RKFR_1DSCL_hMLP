@@ -1,0 +1,35 @@
+!! Input conditions !!
+
+$$ PDE TYPE = burgers
+
+$$ ADVECTION SPEED = 0.5
+
+$$ FLUX SCHEME = godunov
+
+$$ CORRECTION FUNCTION = DG
+
+$$ LIMITER = MLP-u1
+
+$$ INITIAL = benchmark1
+
+$$ BOUNDARY = periodic
+
+$$ TIME INTEGRATION = RK3
+
+$$ AREA = 2.0
+
+$$ GRID SIZE = 0.05
+
+$$ TARGET TIME = 4.0
+
+$$ CFL = 0.9
+
+$$ POLYNOMIAL ORDER = 1
+
+!! Options !!
+$$ advection, burgers
+$$ godunov
+$$ DG, SG, 2, LO, GA
+$$ none, MLP-u1, MLP-u2
+$$ square, halfdome, gauss, shock, expansion, sine, benchmark1, benchmark2, constant
+$$ periodic, constant
